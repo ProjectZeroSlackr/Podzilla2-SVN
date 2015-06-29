@@ -687,7 +687,7 @@ int podpaint_save(TWidget * wxd, ttk_surface srf)
 	PzWindow * ret;
 	TWidget * wid;
 	ret = pz_new_window(_("Save to..."), PZ_WINDOW_NORMAL);
-	wid = ti_new_standard_text_widget(10, 40, ret->w-20, 10+ttk_text_height(ttk_textfont), 0, "/Images/untitled.bmp", podpaint_save_callback);
+	wid = ti_new_standard_text_widget(10, 40, ret->w-20, 10+ttk_text_height(ttk_textfont), 0, "/mnt/untitled.bmp", podpaint_save_callback);
 	ttk_add_widget(ret, wid);
 	pz_show_window(pz_finish_window(ret));
 	ti_widget_start(wid);

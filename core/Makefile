@@ -10,6 +10,10 @@ MYCFLAGS = -g `$(TTKCONF) --x11 --sdl --cflags` -DVERSION=\"$(VERSION)\" -Wall
 endif
 MYCFLAGS += -I/sw/include
 
+ifdef SANSA
+MYCFLAGS += -DSANSA
+endif
+
 OBJS= pz.o module.o ipod.o dialog.o header.o settings.o fonts.o \
       menu.o legacy.o gui.o browser.o vector.o oss.o appearance.o input.o \
       priority.o icons.o menuconf.o

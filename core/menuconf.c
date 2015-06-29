@@ -278,7 +278,7 @@ int pz_menuconf_runfile(char * fn)
 }
 
 #ifdef IPOD
-#define MENUCONF_CONFIG_FILE "/etc/podzilla/menu.conf"
+#define MENUCONF_CONFIG_FILE "/opt/Zillae/Podzilla2-SVN/Conf/menu.conf"
 #else
 #define MENUCONF_CONFIG_FILE "config/menu.conf"
 #endif

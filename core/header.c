@@ -2024,13 +2024,13 @@ void pz_header_init()
 		/* some default widgets */
 		pz_enable_widget_on_side( HEADER_SIDE_LEFT, "Hold" );
 		pz_enable_widget_on_side( HEADER_SIDE_LEFT, "USB/Firewire" );
-		pz_enable_widget_on_side( HEADER_SIDE_RIGHT, "Power Icon" );
+		pz_enable_widget_on_side( HEADER_SIDE_RIGHT, "Big Power Icon" );
 
 		/* set up "Plain" as the default */
-		pz_enable_header_decorations( "Plain" );
+		pz_enable_header_decorations( "CS Gradient" );
 
 		/* and save them out */
-		pz_set_string_setting( pz_global_config, DECORATIONS, "Plain" );
+		pz_set_string_setting( pz_global_config, DECORATIONS, "CS Gradient" );
 		header_settings_save();
 	} else {
 

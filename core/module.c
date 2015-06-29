@@ -140,8 +140,8 @@ static void load_modinf (PzModule *mod)
 {
     char *buf = malloc (512);
 #ifdef IPOD
-    char *confdir = "/etc/podzilla";
-    char *moddir = "/etc/podzilla/modules";
+    char *confdir = "/sandbox";
+    char *moddir = "/sandbox/modules";
 #else
     char *confdir = malloc( MAXPATHLEN + 10 );
     char *moddir = malloc( MAXPATHLEN + 20 );
